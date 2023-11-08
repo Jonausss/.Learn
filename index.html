@@ -28,6 +28,9 @@
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:500,600,700%7COpen+Sans&display=swap" rel="stylesheet">
 
+    <!--js-->
+    <script src="js/multiLanguage.js"></script>
+
     <!--Bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Magnific popup css-->
@@ -87,7 +90,16 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language
+                        </a>
+                        <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#eng" data-reload>English</a>
+                            <a class="dropdown-item" href="#pt" data-reload>Portuguese</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -106,7 +118,7 @@
             <div class="row align-items-center justify-content-between pt-5 pb-5">
                 <div class="col-md-12 col-lg-6">
                     <div class="hero-content-left text-white">
-                        <h1 class="text-white">We are a Progamation NGO</h1>
+                        <h1 class="text-white" id="hero-title">We are a Progamation NGO</h1>
                         <p class="lead">We give the opportunity to people learn programation and IT all over the world.</p>
 
                         <a href="#" class="btn solid-btn btn-primary">Contact us</a>
@@ -206,16 +218,16 @@
                         <div class="single-feature my-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="ti-alarm-clock rounded mr-3 icon primary-bg text-white"></span>
-                                <h5 class="mb-0">Easy to use</h5>
+                                <h5 class="mb-0">Pratical</h5>
                             </div>
-                            <p>Synergistically deliver next-generation relationships whereas bleeding-edge resources. Continually pontificate stand-alone benefits whereas.</p>
+                            <p>Just need to the owner's institution register in our site and we go to there.</p>
                         </div>
                         <div class="single-feature my-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="ti-alarm-clock rounded mr-3 icon primary-bg text-white"></span>
-                                <h5 class="mb-0">Increase conversion</h5>
+                                <h5 class="mb-0">No pay</h5>
                             </div>
-                            <p>Phosfluorescently empower compelling intellectual capital and revolutionary web services. Compellingly develop cross-media.</p>
+                            <p>No one have to pay for our service, we are a NGO.</p>
                         </div>
                     </div>
                 </div>
@@ -247,23 +259,6 @@
         </div>
     </section>
     <!--about us section end-->
-
-    <!--our video promo section start-->
-    <section class="video-promo ptb-100 background-img"
-             style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8">
-                    <div class="text-center text-white">
-                        <h2 class="text-white">Increase More Traffic Your Business?</h2>
-                        <p class="lead">Credibly redefine high-payoff web services after holistic experiences. Dramatically enable go forward cross-platform scenarios vis-a-vis diverse markets.</p>
-                        <a href="#" class="btn solid-btn mt-3">Contact With Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--our video promo section end-->
 
     <!--our services section start-->
     <section id="services" class="our-services-section ptb-100">
@@ -355,110 +350,13 @@
     </section>
     <!--our services section end-->
 
-    <!--our pricing packages section start-->
-    <section id="pricing" class="pricing-section ptb-100 gray-light-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8">
-                    <div class="section-heading text-center mb-5">
-                        <h2>Our Pricing Packages</h2>
-                        <p class="lead">
-                            Distinctively recaptiualize principle-centered core competencies through client-centered
-                            core competencies. Enthusiastically provide access.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="card text-center single-pricing-pack">
-                        <div class="pt-5">
-                            <h5 class="mb-0">Basic License</h5>
-                            <p>Medium traffic personal sites</p>
-                        </div>
-                        <div class="card-header py-4 border-0 pricing-header">
-                            <div class="price text-center mb-0">$19<span>/month</span></div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4 pricing-feature-list">
-                                <li><span>10</span> Hosted Domains</li>
-                                <li><span>25 GB</span> RAID 10 Storage</li>
-                                <li><span>200 GB</span> Bandwidth</li>
-                                <li><span>1 Free</span> Domain included</li>
-                                <li><span>Super Fast</span> SSD Storage</li>
-                                <li><span>Free</span> SSL Certificate</li>
-                                <li>99.95% Uptime</li>
-                                <li>24/7 Phone Support</li>
-                            </ul>
-                            <a href="#" class="btn primary-outline-btn mb-3" target="_blank">Purchase now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="card popular-price text-center single-pricing-pack">
-                        <div class="pt-5">
-                            <h5 class="mb-0">Standard License <span class="badge badge-danger">Popular</span></h5>
-                            <p>High traffic corporate sites</p>
-                        </div>
-                        <div class="card-header py-4 border-0 pricing-header">
-                            <div class="price text-center mb-0">$49<span>/month</span></div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4 pricing-feature-list">
-                                <li><span>30</span> Hosted Domains</li>
-                                <li><span>75 GB</span> RAID 10 Storage</li>
-                                <li><span>700 GB</span> Bandwidth</li>
-                                <li><span>3 Free</span> Domain included</li>
-                                <li><span>Super Fast</span> SSD Storage</li>
-                                <li><span>Free</span> SSL Certificate</li>
-                                <li>99.95% Uptime</li>
-                                <li>24/7 Phone Support</li>
-                            </ul>
-                            <a href="#" class="btn primary-solid-btn mb-3" target="_blank">Purchase now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="card text-center single-pricing-pack">
-                        <div class="pt-5">
-                            <h5 class="mb-0">Extended License
-                            </h5>
-                            <p>Enterprise content management</p>
-                        </div>
-                        <div class="card-header py-4 border-0 pricing-header">
-                            <div class="price text-center mb-0">$69<span>/month</span></div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4 pricing-feature-list">
-                                <li><span>60</span> Hosted Domains</li>
-                                <li><span>175 GB</span> RAID 10 Storage</li>
-                                <li><span>1500 GB</span> Bandwidth</li>
-                                <li><span>6 Free</span> Domain included</li>
-                                <li><span>Super Fast</span> SSD Storage</li>
-                                <li><span>Free</span> SSL Certificate</li>
-                                <li>99.95% Uptime</li>
-                                <li>24/7 Phone Support</li>
-                            </ul>
-                            <a href="#" class="btn primary-outline-btn mb-3" target="_blank">Purchase now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--our pricing packages section end-->
-
     <!--testimonial section start-->
-    <section class="testimonial-section ptb-100">
+    <section class="testimonial-section ptb-100 gray-light-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
                     <div class="section-heading mb-5 text-center">
-                        <h2>Testimonials What Clients Say</h2>
-                        <p class="lead">
-                            Rapidiously morph transparent internal or "organic" sources whereas resource sucking
-                            e-business. Conveniently innovate compelling internal.
-                        </p>
+                        <h2>Testimonials What Students Say</h2>
                     </div>
                 </div>
             </div>
@@ -498,7 +396,6 @@
                                 </blockquote>
                                 <div class="client-ratting mt-2">
                                     <ul class="list-inline client-ratting-list">
-                                        <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
@@ -554,7 +451,6 @@
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
-                                        <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                     </ul>
                                     <h6 class="font-weight-bold">5.0 <small class="font-weight-lighter">BizBite</small></h6>
                                 </div>
@@ -576,8 +472,25 @@
     </section>
     <!--testimonial section end-->
 
+    <!--our video promo section start-->
+    <section class="video-promo ptb-100 background-img"
+             style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8">
+                    <div class="text-center text-white">
+                        <h2 class="text-white">Want to colaborate with our mission?</h2>
+                        <p class="lead">You are very welcome to colaborate with us, both giving us money contributions and be one of us.</p>
+                        <a href="#" class="btn solid-btn mt-3">Contact With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our video promo section end-->
+
     <!--contact us section start-->
-    <section id="contact" class="contact-us-section ptb-100 gray-light-bg">
+    <section id="contact" class="contact-us-section ptb-100">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-12 pb-3 message-box d-none">
@@ -600,13 +513,23 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
+                                        <input type="text" class="form-control" name="institution" placeholder="Enter your institution name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="location" placeholder="Enter your institution location" required="required">
+                                    </div>
+                                <div class="col-12">
+                                    <div class="form-group">
                                         <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
                                     </div>
+                                </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-check d-inline-flex align-items-center mb-2">
                                         <input type="checkbox" class="form-check-input" id="checkInfo">
-                                        <label class="form-check-label" for="checkInfo">Save my information for later use</label>
+                                        <label class="form-check-label" for="checkInfo">I confirm that i am the institution owner</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 mt-3">
@@ -640,28 +563,6 @@
         </div>
     </section>
     <!--contact us section end-->
-
-    <!--call to action start-->
-    <section class="call-to-action ptb-100 background-img"
-             style="background: url('img/hero-bg-2.jpg')no-repeat center center / cover fixed">
-        <div class="container">
-            <div class="row align-items-center justify-content-around">
-                <div class="col-md-8 col-lg-8">
-                    <div class="call-to-action-content text-white">
-                        <h2 class="text-white mb-1">AgencyCo It's easier than you think.</h2>
-                        <p>Progressively deliver market-driven quality vectors rather than goal-oriented niche markets.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="call-to-action-btn text-md-right text-lg-right text-sm-left">
-                        <a href="#" target="_blank" class="btn solid-btn"> Buy AgencyCo <span>$14</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--call to action end-->
-
 </div>
 <!--body content wrap end-->
 
