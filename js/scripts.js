@@ -88,7 +88,7 @@ jQuery(function ($) {
     })
 
    // 6. custom counter js with scrolling
-    var isFirstTime = true;
+    /*var isFirstTime = true;
     var interval = null;
     var countSelector = $('.single-counter > span, .single-card > h3');
     if(countSelector.length) {
@@ -140,7 +140,7 @@ jQuery(function ($) {
      * @param value int
      * @param id int
      */
-    function count(counters, start, value, id) {
+    /*function count(counters, start, value, id) {
         var localStart = start;
         interval = setInterval(function() {
             if (localStart < value) {

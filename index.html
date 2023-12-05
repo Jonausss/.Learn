@@ -95,8 +95,8 @@
                             Language
                         </a>
                         <div class="dropdown-menu submenu langs" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#eng" data-reload>English</a>
-                            <a class="dropdown-item" href="#pt" data-reload>Portuguese</a>
+                            <a class="dropdown-item" href="#eng" onclick="ChangeLanguage()" data-reload>English</a>
+                            <a class="dropdown-item" href="#pt" onclick="ChangeLanguage()" data-reload>Portuguese</a>
                         </div>
                     </li>
                 </ul>
@@ -124,15 +124,15 @@
 
                         <!--clients logo start-->
                         <div class="client-section-wrap mt-5">
-                            <p>Sponsored by companies like: </p>
+                            <p id="hero-sponsors">Sponsored by companies like: </p>
                             <ul class="list-inline">
-                                <li class="list-inline-item"><img src="img/client-1-gray.png" width="85" alt="client"
+                                <li class="list-inline-item"><img src="img/Logo-google.png" width="85" alt="client"
                                                                        class="img-fluid"></li>
-                                <li class="list-inline-item"><img src="img/client-2-gray.png" width="85" alt="client"
+                                <li class="list-inline-item"><img src="img/logo-microsoft.png" width="85" alt="client"
                                                                        class="img-fluid"></li>
-                                <li class="list-inline-item"><img src="img/client-3-gray.png" width="85" alt="client"
+                                <li class="list-inline-item"><img src="img/logo-IBM.png" width="85" alt="client"
                                                                        class="img-fluid"></li>
-                                <li class="list-inline-item"><img src="img/client-4-gray.png" width="85" alt="client"
+                                <li class="list-inline-item"><img src="img/logo-cisco.png" width="85" alt="client"
                                                                        class="img-fluid"></li>
                             </ul>
                         </div>
@@ -159,14 +159,14 @@
     </section>
     <!--hero section end-->
 
-    <!--promo section start-->
+    <!--content section start-->
     <section class="promo-section ptb-100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-9">
                     <div class="section-heading text-center mb-5">
-                        <h2>What we teach to our students?</h2>
-                        <p class="lead">
+                        <h2 id="content-title">What we teach to our students?</h2>
+                        <p class="lead" id="content-description">
                             Following reasons show what students learn with our teachers during the time. Teached by high competent professionals.
                         </p>
                     </div>
@@ -175,35 +175,35 @@
             <div class="row">
                 <div class="col-md-4 col-lg-4">
                     <div class="single-promo single-promo-hover gray-light-bg h-100 rounded">
-                        <img src="img/service6.jpg" alt="promo image" class="img-fluid img-full-box">
+                        <img src="img/front-end.png" alt="promo image" class="img-fluid img-full-box">
                         <div class="promo-info">
-                            <h5>Front-end</h5>
-                            <p>Learning html, css, javascript and more.</p>
+                            <h5 id="content-1-title">Front-end</h5>
+                            <p id="content-1-description">Learning html, css, javascript and more.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <div class="single-promo single-promo-hover gray-light-bg h-100 rounded">
-                        <img src="img/service2.jpg" alt="promo image" class="img-fluid img-full-box">
+                        <img src="img/data-analitycs.png" alt="promo image" class="img-fluid img-full-box">
                         <div class="promo-info">
-                            <h5>Data Analytics</h5>
-                            <p>All you have to know about tables and SQL.</p>
+                            <h5 id="content-2-title">Data Analytics</h5>
+                            <p id="content-2-description">All you have to know about tables and SQL.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <div class="single-promo single-promo-hover gray-light-bg h-100 rounded">
-                        <img src="img/service7.jpg" alt="promo image" class="img-fluid img-full-box">
+                        <img src="img/game-development.png" alt="promo image" class="img-fluid img-full-box">
                         <div class="promo-info">
-                            <h5>Game Development</h5>
-                            <p>Using three different tools to make your dream games.</p>
+                            <h5 id="content-3-title">Game Development</h5>
+                            <p id="content-3-description">Using three different tools to make your dream games.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--promo section end-->
+    <!--content section end-->
 
     <!--about us section start-->
     <section id="about" class="about-us ptb-100 gray-light-bg">
@@ -211,22 +211,22 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="about-content-left">
-                        <h2>An NGO for those who can't pay for classes.</h2>
-                        <p class="lead">We go to your neighbor and make the best structure to teach everyone.</p>
+                        <h2 id="about-title">An NGO for those who can't pay for classes.</h2>
+                        <p class="lead" id="about-description">We go to your neighbor and make the best structure to teach everyone.</p>
 
                         <div class="single-feature my-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="ti-alarm-clock rounded mr-3 icon primary-bg text-white"></span>
-                                <h5 class="mb-0">Pratical</h5>
+                                <h5 class="mb-0" id="about-1-title">Pratical</h5>
                             </div>
-                            <p>Just need to the owner's institution register in our site and we go to there.</p>
+                            <p id="about-1-description">Just need to the owner's institution register in our site and we go to there.</p>
                         </div>
                         <div class="single-feature my-4">
                             <div class="d-flex align-items-center mb-2">
                                 <span class="ti-alarm-clock rounded mr-3 icon primary-bg text-white"></span>
-                                <h5 class="mb-0">No pay</h5>
+                                <h5 class="mb-0" id="about-2-title">No pay</h5>
                             </div>
-                            <p>No one have to pay for our service, we are a NGO.</p>
+                            <p id="about-2-description">No one have to pay for our service, we are a NGO.</p>
                         </div>
                     </div>
                 </div>
@@ -235,22 +235,22 @@
                         <div class="single-card box-animation-1 secondary-bg text-white">
                             <span class="ti-medall-alt color-primary"></span>
                             <h3>92</h3>
-                            <p>Active locations</p>
+                            <p id="about-category-1">Active locations</p>
                         </div>
                         <div class="single-card box-animation-2 icon-color-1">
                             <span class="ti-headphone-alt"></span>
                             <h3>347</h3>
-                            <p>Contributors</p>
+                            <p id="about-category-2">Contributors</p>
                         </div>
                         <div class="single-card box-animation-3 icon-color-2">
                             <span class="ti-cup"></span>
                             <h3>1103</h3>
-                            <p>Students with certificate</p>
+                            <p id="about-category-3">Students with certificate</p>
                         </div>
                         <div class="single-card box-animation-4 primary-bg text-white">
                             <span class="ti-user color-secondary"></span>
                             <h3>2149</h3>
-                            <p>Clients satisfaction</p>
+                            <p id="about-category-4">Clients satisfaction</p>
                         </div>
                     </div>
                 </div>
@@ -259,15 +259,14 @@
     </section>
     <!--about us section end-->
 
-    <!--our services section start-->
+    <!--our structure section start-->
     <section id="services" class="our-services-section ptb-100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
                     <div class="section-heading text-center mb-5">
-                        <h2>We Provide Best Services For You</h2>
-                        <p class="lead">These features come standard in all of our hosting plans. Dynamically extend
-                            imperatives through open-source quickly niche markets.</p>
+                        <h2 id="structure-title">We Provide Best Services For You</h2>
+                        <p class="lead" id="structure-description">These features are standard in all of our locations.</p>
                     </div>
                 </div>
             </div>
@@ -278,9 +277,8 @@
                             <span class="ti-panel icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>Custom Control Panel</h5>
-                            <p>Our intuitive control panel gives you admin access to all of your DreamHost products.
-                                Easily update domain information, add users, adjust email settings gain access.</p>
+                            <h5 id="structure-1-title">Qualified professionals</h5>
+                            <p id="structure-1-description">Our teachers are dedicated to ensuring that each student understands concepts in a clear and inspiring way.</p>
                         </div>
                     </div>
                 </div>
@@ -290,9 +288,8 @@
                             <span class="ti-thumb-up icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>Real-Life Human Beings</h5>
-                            <p>Tech veterans, geeks, and nerds are all standing by to optimize your experience. Whether
-                                you get in touch with our support, read our knowledge base, or start a thread.</p>
+                            <h5 id="structure-2-title">Didatic estructure</h5>
+                            <p id="structure-2-description"> We use an adaptive teaching approach, recognizing students' diverse abilities and learning styles.</p>
                         </div>
                     </div>
                 </div>
@@ -302,9 +299,8 @@
                             <span class="ti-mouse-alt icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>1-Click Installer</h5>
-                            <p>No need to dig into a bunch of documentation. Simply install web apps like WordPress,
-                                Joomla! and more. Monotonectally administrate economically sound opportunities.</p>
+                            <h5 id="structure-3-title"> Complete teaching material</h5>
+                            <p id="structure-3-description">We provide learning materials, including digital resources and printed materials.</p>
                         </div>
                     </div>
                 </div>
@@ -314,9 +310,9 @@
                             <span class="ti-timer icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>100% Uptime Guarantee</h5>
-                            <p>With multiple datacenter locations, redundant cooling, emergency generators, and constant
-                                monitoring, we are able to offer our 100% Uptime Guarantee.</p>
+                            <h5 id="structure-4-title">
+                                Technological Infrastructure</h5>
+                            <p id="structure-4-description">We have set up a complete infrastructure to ensure that all students have access to the necessary resources such as computers and internet.</p>
                         </div>
                     </div>
                 </div>
@@ -326,9 +322,8 @@
                             <span class="ti-harddrives icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>Solid State Drives (SSD)</h5>
-                            <p>With SSDs, your website, caching, and database queries are faster by our calculations.
-                                Quickly orchestrate worldwide niche markets vis-a-vis end-to-end infomediaries. </p>
+                            <h5 id="structure-5-title">Personalized Follow-up</h5>
+                            <p id="structure-5-description">Each student receives individualized guidance to identify their specific learning and development needs.</p>
                         </div>
                     </div>
                 </div>
@@ -338,9 +333,8 @@
                             <span class="ti-cup icon-md color-primary"></span>
                         </div>
                         <div class="features-box-content">
-                            <h5>Award-Winning Support</h5>
-                            <p>No question is too simple, or too complex for our team of experts. Synergistically
-                                synergize Our in-house support staff and service team are here for you 24/7, 365.</p>
+                            <h5 id="structure-6-title">Extracurricular activities</h5>
+                            <p id="structure-6-description">We promote practical activities and projects that allow students to apply their knowledge in real-world situations.</p>
                         </div>
                     </div>
                 </div>
@@ -355,7 +349,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
                     <div class="section-heading mb-5 text-center">
-                        <h2>Testimonials What Students Say</h2>
+                        <h2 id="testimonial-title">Testimonials What Students Say</h2>
                     </div>
                 </div>
             </div>
@@ -364,8 +358,7 @@
                     <div class="owl-carousel owl-theme client-testimonial custom-arrow custom-arrow-bottom-center mb-5">
                         <div class="item">
                             <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                <blockquote>
-                                    Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                                <blockquote id="testimonial-1">Amazing opportunity to learn programming! The teachers were very patient and explained everything clearly. I especially enjoyed the practical activities that challenged us to apply what we learned.
                                 </blockquote>
                                 <div class="client-ratting mt-2">
                                     <ul class="list-inline client-ratting-list">
@@ -383,15 +376,14 @@
                                     <img src="img/client-1.jpg" alt="client" width="60" class="img-fluid rounded-circle shadow-sm"/>
                                 </div>
                                 <div class="client-info">
-                                    <h5 class="mb-0">Austin Cesar</h5>
-                                    <p class="mb-0">ThemeTags</p>
+                                    <h5 class="mb-0">Juan Martinez</h5>
+                                    <p class="mb-0">Comunitary School Nova Esperança</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                <blockquote>
-                                    Intrinsicly facilitate functional imperatives without next-generation meta-services. Compellingly revolutionize worldwide users vis-a-vis enterprise best practices.
+                                <blockquote id="testimonial-2">The classes were very useful for understanding programming. The teachers were attentive, but it would be interesting to have more technological resources to practice at home.
                                 </blockquote>
                                 <div class="client-ratting mt-2">
                                     <ul class="list-inline client-ratting-list">
@@ -400,7 +392,7 @@
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                     </ul>
-                                    <h6 class="font-weight-bold">5.0 <small class="font-weight-lighter">BizBite</small></h6>
+                                    <h6 class="font-weight-bold">4.0 <small class="font-weight-lighter">BizBite</small></h6>
                                 </div>
                             </div>
                             <div class="client-info-wrap d-flex align-items-center mt-5">
@@ -408,15 +400,14 @@
                                     <img src="img/client-2.jpg" alt="client" width="60" class="img-fluid rounded-circle shadow-sm"/>
                                 </div>
                                 <div class="client-info">
-                                    <h5 class="mb-0">Pirtle Karol</h5>
-                                    <p class="mb-0">ThemeTags</p>
+                                    <h5 class="mb-0">Fatima Abubakar</h5>
+                                    <p class="mb-0">Comunitary School Raízes do Amanhã</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                <blockquote>
-                                    Interactively grow backend scenarios through one paradigms. Distinctively and communicate efficient information without effective meta-services.
+                                <blockquote id="testimonial-3">The experience was enriching! I learned a lot about coding. It would be great to have more practical sessions to apply theoretical knowledge.
                                 </blockquote>
                                 <div class="client-ratting mt-2">
                                     <ul class="list-inline client-ratting-list">
@@ -434,15 +425,14 @@
                                     <img src="img/client-3.jpg" alt="client" width="60" class="img-fluid rounded-circle shadow-sm"/>
                                 </div>
                                 <div class="client-info">
-                                    <h5 class="mb-0">Aminul Islam</h5>
-                                    <p class="mb-0">ThemeTags</p>
+                                    <h5 class="mb-0">Sofia Rosales</h5>
+                                    <p class="mb-0">Municipal School Esperança do Saber</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                <blockquote>
-                                    Intrinsicly facilitate functional imperatives without next-generation meta-services. Compellingly revolutionize worldwide users vis-a-vis enterprise best practices.
+                                <blockquote id="testimonial-4">It was a great introduction to programming! The teachers were dedicated and the classes were very useful. It would be nice to have more time to practice and explore different areas of programming.
                                 </blockquote>
                                 <div class="client-ratting mt-2">
                                     <ul class="list-inline client-ratting-list">
@@ -451,7 +441,7 @@
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                         <li class="list-inline-item"><span class="ti-star ratting-color"></span></li>
                                     </ul>
-                                    <h6 class="font-weight-bold">5.0 <small class="font-weight-lighter">BizBite</small></h6>
+                                    <h6 class="font-weight-bold">4.0 <small class="font-weight-lighter">BizBite</small></h6>
                                 </div>
                             </div>
                             <div class="client-info-wrap d-flex align-items-center mt-5">
@@ -459,8 +449,8 @@
                                     <img src="img/client-4.jpg" alt="client" width="60" class="img-fluid rounded-circle shadow-sm"/>
                                 </div>
                                 <div class="client-info">
-                                    <h5 class="mb-0">Pirtle Karol</h5>
-                                    <p class="mb-0">ThemeTags</p>
+                                    <h5 class="mb-0">Malik Patel</h5>
+                                    <p class="mb-0">Comunitary School Aprendendo Juntos</p>
                                 </div>
                             </div>
                         </div>
@@ -471,15 +461,15 @@
     </section>
     <!--testimonial section end-->
 
-    <!--our video promo section start-->
+    <!--colaboration section start-->
     <section class="video-promo ptb-100 background-img"
-             style="background: url('img/hero-bg-4.jpg')no-repeat center center / cover">
+             style="background: url('img/programation-class.png')no-repeat center center / cover">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
                     <div class="text-center text-white">
-                        <h2 class="text-white">Want to colaborate with our mission?</h2>
-                        <p class="lead">You are very welcome to colaborate with us, both giving us money contributions and be one of us.</p>
+                        <h2 class="text-white" id="colaboration-title">Want to colaborate with our mission?</h2>
+                        <p class="lead" id="colaboration-description">You are very welcome to colaborate with us, both giving us money contributions and be one of us.</p>
                         <a href="#" class="btn solid-btn mt-3"  id="s-contact-button">Contact Us</a>
                     </div>
                 </div>
@@ -497,7 +487,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contact-us-form white-bg rounded p-5">
-                        <h4>Ready to get started?</h4>
+                        <h4 id="contact-forms-title">Ready to get started?</h4>
                         <form action="#" method="POST" id="contactForm1" class="contact-us-form">
                             <div class="form-row">
                                 <div class="col-12">
@@ -528,11 +518,11 @@
                                 <div class="col-12">
                                     <div class="form-check d-inline-flex align-items-center mb-2">
                                         <input type="checkbox" class="form-check-input" id="checkInfo">
-                                        <label class="form-check-label" for="checkInfo">I confirm that i am the institution owner</label>
+                                        <label class="form-check-label" for="checkInfo" id="contact-checkinfo">I confirm that i am the institution owner</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 mt-3">
-                                    <button type="submit" class="btn primary-solid-btn" id="btnContactUs">
+                                    <button type="submit" class="btn primary-solid-btn" id="btnContactUs contact-send-button">
                                         Send Message
                                     </button>
                                 </div>
@@ -542,20 +532,17 @@
                 </div>
                 <div class="col-md-5">
                     <div class="contact-us-content">
-                        <h2>Looking for a excellent Business idea?</h2>
-                        <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives. Client-centric innovation before economically sound best practices. Credibly formulate revolutionary bandwidth.</p>
+                        <h2 id="contact-title">Want to talk with us?</h2>
+                        <p class="lead" id="contact-description">Fill out the form and we will contact you by email for an introductory conversation.</p>
 
                         <hr class="my-5">
 
-                        <h5>Our Headquarters</h5>
-                        <address>
+                        <h5 id="contact-location-title">Our Headquarters</h5>
+                        <address">
                             100 Yellow House, Mn <br>
                             Factory, United State, 13420
                         </address>
                         <br>
-                        <span>Phone: +1234567890123</span> <br>
-                        <span>Email: <a href="mailto:email@yourdomain.com" class="link-color">email@yourdomain.com</a></span>
-
                     </div>
                 </div>
             </div>
@@ -567,110 +554,6 @@
 
 <!--footer section start-->
 <footer class="footer-section">
-    <!--footer top start-->
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row footer-top-wrap">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer-nav-wrap">
-                                <h4>QUICK LINKS</h4>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Make Appointment</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Department Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Our Case Studies</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Our Business Growth</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer-nav-wrap">
-                                <h4>COMPANY</h4>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About Our Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Our Affiliates Program</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">View Our Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Check Our Careers</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer-nav-wrap">
-                                <h4>LEGAL</h4>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Legal Information</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Privacy Policy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Report Abuse</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Terms of Service</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer-nav-wrap">
-                                <h4>SUPPORT</h4>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Knowledge Base</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Forums</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">System Status</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row footer-top-wrap">
-                        <div class="col-12">
-                            <div class="footer-nav-wrap">
-                                <h4>GET IN TOUCH</h4>
-                                <ul class="get-in-touch-list">
-                                    <li class="d-flex align-items-center py-2"><span class="ti-location-pin"></span> 1234 Street Name, City Name, USA</li>
-                                    <li class="d-flex align-items-center py-2"><span class="ti-email"></span> you@domain.com</li>
-                                    <li class="d-flex align-items-center py-2"><span class="ti-mobile"></span> (123) 456-7890 - (123) 456-7890</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--footer top end-->
-
     <!--footer copyright start-->
     <div class="footer-bottom gray-light-bg py-2">
         <div class="container">
